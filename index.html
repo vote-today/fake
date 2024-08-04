@@ -3,73 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook - Log In or Sign Up</title>
+    <title>Fake Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: #f4f4f4;
             margin: 0;
         }
-        .container {
-            width: 100%;
-            max-width: 400px;
-            background-color: white;
+        .login-container {
+            background-color: #fff;
             padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
             text-align: center;
         }
-        .container h1 {
-            color: #1877f2;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .container input[type="text"],
-        .container input[type="password"] {
+        .login-container input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #dddfe2;
-            border-radius: 6px;
-            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-        .container button {
+        .login-container button {
             width: 100%;
             padding: 10px;
-            background-color: #1877f2;
             border: none;
-            border-radius: 6px;
-            color: white;
-            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
             cursor: pointer;
         }
-        .container button:hover {
-            background-color: #165ecb;
+        .login-container button:hover {
+            background-color: #0056b3;
         }
-        .container .footer {
+        .login-container .message {
+            text-align: center;
             margin-top: 20px;
-            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>facebook</h1>
-        <form>
-            <input type="text" placeholder="Email or Phone Number" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-        </form>
-        <div class="footer">
-            <p><a href="#">Forgotten password?</a></p>
-            <hr>
-            <button type="button" style="background-color: #42b72a;">Create New Account</button>
+    <div class="login-container">
+        <h2>Login Page</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button type="button">Login</button>
+        <div class="message">
+            <p>Not a real login page. For demonstration purposes only.</p>
         </div>
     </div>
 </body>
 </html>
-
